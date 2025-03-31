@@ -1,0 +1,32 @@
+###
+GET http://localhost:4000/users
+
+###
+GET http://localhost:4000/users?page=2&perPage=2
+
+###npm run dev
+GET http://localhost:4000/users?perPage=100
+
+###
+GET http://localhost:4000/users/67b7a74841decc3d58fb1d6b
+
+###
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+    "firstName": "Pinco",
+    "lastName": "Pallino",
+    "email": "pinco.pallino@gmail.com"
+}
+
+###
+PUT http://localhost:4000/users/67b7a74841decc3d58fb1d6b
+Content-Type: application/json
+
+{
+    "firstName": "Pinco Modificato",
+}
+
+###
+DELETE http://localhost:4000/users/67b7a74841decc3d58fb1d6b

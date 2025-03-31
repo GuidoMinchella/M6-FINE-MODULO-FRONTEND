@@ -1,0 +1,28 @@
+@baseUrl=http://localhost:4000/api/v1
+
+###
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "Asdf",
+    "lastName": "Fdsa",
+    "email": "test3@gmail.com",
+    "password": "asdf"
+}
+
+###
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "test3@gmail.com",
+    "password": "asdf"
+}
+
+
+###
+GET {{baseUrl}}/login-google
+
+###
+GET {{baseUrl}}/callback-google

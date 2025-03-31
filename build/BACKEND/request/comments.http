@@ -1,0 +1,21 @@
+@baseUrl=http://localhost:4000/api/v1
+
+###
+POST {{baseUrl}}/recipes/67c6074aaa395615b7f6b70a/comments
+Content-Type: application/json
+
+{
+    "text": "Sono un commento 3"
+}
+
+###
+PUT {{baseUrl}}/recipes/67c6074aaa395615b7f6b70a/comments/67c611c67d4a570c9407b104
+Content-Type: application/json
+
+{
+    "text": "Modificato 3",
+    "date": null
+}
+
+###
+DELETE  {{baseUrl}}/recipes/67c6074aaa395615b7f6b70a/comments/67c611e37d4a570c9407b108
